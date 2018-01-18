@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/unlock_bg_img"
+        android:scaleType="centerCrop"
+        android:src="@drawable/unlock"
+        />
+
+    <LinearLayout
+        android:id="@+id/unlock_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="请输入密码:"
+            android:textColor="#FFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/unlock_pwd_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button_pws_1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+            <Button
+                android:id="@+id/button_pws_2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="2"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+            <Button
+                android:id="@+id/button_pws_3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:text="3"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button_pws_4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:text="4"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+            <Button
+                android:id="@+id/button_pws_5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="5"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+            <Button
+                android:id="@+id/button_pws_6"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:text="6"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button_pws_7"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:text="7"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+            <Button
+                android:id="@+id/button_pws_8"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="8"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+            <Button
+                android:id="@+id/button_pws_9"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:text="9"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button_pws_del"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:text="重输"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+            <Button
+                android:id="@+id/button_pws_0"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="0"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+            <Button
+                android:id="@+id/button_pws_ok"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:text="Ok"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
