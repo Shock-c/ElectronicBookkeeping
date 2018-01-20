@@ -29,14 +29,15 @@ public class BaseActivity extends AppCompatActivity{
         myApplication = (MyApplication) getApplication();
         if(DataSupport.findAll(Password.class).size()>0){
             if(myApplication.isreturn){
-
                finish();
-
             }
-            if(myApplication.isLocked && !myApplication.isreturn){
+            else if(myApplication.isLocked){
                 Intent intent = new Intent(this,Unlock.class);
                 startActivity(intent);
             }
         }
     }
+
+
+
 }
