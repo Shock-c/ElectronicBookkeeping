@@ -1,6 +1,8 @@
 package com.electronicbookkeeping.android;
 
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.electronicbookkeeping.android.db.Password;
@@ -14,12 +16,24 @@ import org.litepal.crud.DataSupport;
 public class BaseActivity extends AppCompatActivity{
 
     MyApplication myApplication;
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        myApplication.isreturn = false;
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
         myApplication = (MyApplication) getApplication();
         if(DataSupport.findAll(Password.class).size()>0){
-            if(myApplication.isLocked){
+            if(myApplication.isreturn){
+
+               finish();
+
+            }
+            if(myApplication.isLocked && !myApplication.isreturn){
                 Intent intent = new Intent(this,Unlock.class);
                 startActivity(intent);
             }

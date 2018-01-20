@@ -156,8 +156,8 @@ public class Unlock extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        //super.onBackPressed();
-        Unlock.this.finish();
+        super.onBackPressed();
+        myApplication.isreturn = true;
 
     }
 
