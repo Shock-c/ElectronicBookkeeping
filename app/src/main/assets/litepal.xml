@@ -7,6 +7,7 @@
 
         <mapping class="com.electronicbookkeeping.android.db.Consumption"/>
         <mapping class="com.electronicbookkeeping.android.db.Password"/>
+        <mapping class="com.electronicbookkeeping.android.db.Consumption"/>
 
     </list>
 

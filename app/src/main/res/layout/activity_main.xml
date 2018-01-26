@@ -1,33 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="输入密码："
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <EditText
-        android:id="@+id/edit_setpsw"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="10sp"
+        android:layout_height="match_parent"
+        android:background="@drawable/election5"
         />
 
-    <Button
-        android:id="@+id/button_setpsw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="10sp"
-        android:text="设置密码"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        >
 
-        />
+        <Button
+            android:id="@+id/button_bookkeep"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/touming"
+            android:text="记 账\n管 理"
+            android:textSize="25sp"
+            android:textColor="#678"
 
-</LinearLayout>
+            />
+        <Button
+            android:id="@+id/button_statistics"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/touming"
+            android:text="统 计\n管 理"
+            android:textSize="25sp"
+            android:textColor="#456"
+            />
+        <Button
+            android:id="@+id/button_password"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/touming"
+            android:text="密 码\n管 理"
+            android:textSize="25sp"
+            android:textColor="#777"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

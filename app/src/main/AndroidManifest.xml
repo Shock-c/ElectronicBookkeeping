@@ -3,7 +3,7 @@
     package="com.electronicbookkeeping.android">
 
     <application
-        android:name="com.electronicbookkeeping.android.MyApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Unlock" />
-
+        <activity android:name=".activity.BookkeppActivity"></activity>
     </application>
 
 </manifest>
