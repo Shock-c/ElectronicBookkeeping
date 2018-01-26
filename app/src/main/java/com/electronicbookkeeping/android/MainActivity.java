@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.electronicbookkeeping.android.activity.BookkeppActivity;
+import com.electronicbookkeeping.android.activity.PasswordActivity;
+import com.electronicbookkeeping.android.activity.StatisticsActivity;
 import com.electronicbookkeeping.android.db.Password;
 
 import org.litepal.crud.DataSupport;
@@ -32,21 +35,24 @@ public class MainActivity extends BaseActivity {
         bookkeep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainActivity.this, BookkeppActivity.class);
+                startActivity(intent);
             }
         });
 
         statictics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainActivity.this, StatisticsActivity.class);
+                startActivity(intent);
             }
         });
 
         password.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainActivity.this, PasswordActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -18,7 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Unlock" />
-        <activity android:name=".activity.BookkeppActivity"></activity>
+        <activity android:name=".activity.BookkeppActivity" />
+        <activity android:name=".activity.StatisticsActivity" />
+        <activity android:name=".activity.PasswordActivity"></activity>
     </application>
 
 </manifest>

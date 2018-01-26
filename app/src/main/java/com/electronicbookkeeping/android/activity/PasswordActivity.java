@@ -6,11 +6,11 @@ import android.os.Bundle;
 import com.electronicbookkeeping.android.BaseActivity;
 import com.electronicbookkeeping.android.R;
 
-public class BookkeppActivity extends BaseActivity {
+public class PasswordActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bookkepp);
+        setContentView(R.layout.activity_password);
     }
 }
