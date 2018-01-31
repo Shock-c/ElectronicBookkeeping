@@ -12,168 +12,192 @@
         />
 
     <LinearLayout
-        android:id="@+id/user_consumption"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <include layout="@layout/title" />
-
-        <TextView
-            android:id="@+id/text_consum_tip"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="今天有没有败家啊\n今天有没有勤俭节约啊\n告诉本猿今天花了多少"
-            android:textSize="20sp"
-            android:textColor="#ddd"
-            android:gravity="center"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:text="今日支出:"
-                android:textColor="#fff"
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/edit_consum_money"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="10dp"
-                android:maxLines="1" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="元"
-                android:textColor="#fff"
-                android:textSize="20sp" />
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:text="支出类型"
-                android:textColor="#fff"
-                android:textSize="20sp"
-                />
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/button_cousum_ok"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center"
-            android:text="确 定"
-            android:textSize="25sp"
-            android:textColor="#888"
-            android:textStyle="bold"
-            android:background="@drawable/touming"
-
-            />
-        <TextView
-            android:id="@+id/text_consum_money"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#fff"
-            android:textSize="15dp"
-            android:gravity="center"
-            />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/user_income"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         >
 
         <include layout="@layout/title" />
 
-        <TextView
-            android:id="@+id/text_income_tip"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="又是美好的一天\n奋斗的你今天收入如何\n快来记录你的收入吧"
-            android:textSize="20sp"
-            android:textColor="#ddd"
-            android:gravity="center"
-            />
-
         <LinearLayout
+            android:id="@+id/user_consumption"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/text_consum_tip"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:text="今日收入:"
-                android:textColor="#fff"
-                android:textSize="20sp" />
+                android:text="\n\n"
+                android:textSize="20sp"
+                android:textColor="#ddd"
+                android:gravity="center"
+                />
 
-            <EditText
-                android:id="@+id/edit_income_money"
-                android:layout_width="100dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="10dp"
-                android:maxLines="1" />
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:text="今日支出:"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_consum_money"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="1"
+                    android:hint="0"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="元"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/consum_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:text="支出类型"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    />
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_consum"
+                    android:layout_below="@+id/consum_type"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_cousum_ok"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:text="确 定"
+                android:textSize="25sp"
+                android:textColor="#888"
+                android:textStyle="bold"
+                android:background="@drawable/touming"
+
+                />
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/text_consum_money"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="元"
                 android:textColor="#fff"
-                android:textSize="20sp" />
+                android:textSize="15dp"
+                android:gravity="center"
+                />
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button_income_ok"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center"
-            android:text="确 定"
-            android:textSize="25sp"
-            android:textColor="#888"
-            android:textStyle="bold"
-            android:background="@drawable/touming"
 
-            />
-        <TextView
-            android:id="@+id/text_income_money"
+        <LinearLayout
+            android:id="@+id/user_income"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#fff"
-            android:textSize="15dp"
-            android:gravity="center"
-            />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+
+            <TextView
+                android:id="@+id/text_income_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n"
+                android:textSize="20sp"
+                android:textColor="#ddd"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:text="今日收入:"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/edit_income_money"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="元"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_income_ok"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:text="确 定"
+                android:textSize="25sp"
+                android:textColor="#888"
+                android:textStyle="bold"
+                android:background="@drawable/touming"
+
+                />
+            <TextView
+                android:id="@+id/text_income_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
 
     </LinearLayout>
+
+
 
 </FrameLayout>

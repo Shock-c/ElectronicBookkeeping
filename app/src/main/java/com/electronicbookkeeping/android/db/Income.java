@@ -10,10 +10,11 @@ import java.util.Date;
 
 public class Income extends DataSupport {
     private int id;
-
-    private String inMoney;
-
-    private Date time;
+    private Double inMoney;
+    private int inYear;
+    private int inMonth;
+    private int inDay;
+    private String inTime;
 
     public int getId() {
         return id;
@@ -23,19 +24,43 @@ public class Income extends DataSupport {
         this.id = id;
     }
 
-    public String getInMoney() {
+    public Double getInMoney() {
         return inMoney;
     }
 
-    public void setInMoney(String inMoney) {
+    public void setInMoney(Double inMoney) {
         this.inMoney = inMoney;
     }
 
-    public Date getTime() {
-        return time;
+    public int getInYear() {
+        return inYear;
     }
 
-    public void setTime(Date time) {
-        this.time = time;
+    public void setInYear(int inYear) {
+        this.inYear = inYear;
+    }
+
+    public int getInMonth() {
+        return inMonth;
+    }
+
+    public void setInMonth(int inMonth) {
+        this.inMonth = inMonth;
+    }
+
+    public int getInDay() {
+        return inDay;
+    }
+
+    public void setInDay(int inDay) {
+        this.inDay = inDay;
+    }
+
+    public String getInTime() {
+        return inTime;
+    }
+
+    public void setInTime(String inTime) {
+        this.inTime = inTime;
     }
 }

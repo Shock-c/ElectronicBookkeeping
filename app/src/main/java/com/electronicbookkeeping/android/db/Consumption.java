@@ -13,11 +13,11 @@ public class Consumption extends DataSupport{
 
     private int id;             //数据库中的头id
     private String cName;       //消费的类目
-    private String cMoney;      //消费金额
-    private Date cTime;       //消费时间
-//    private String cDay;        //消费时间  日
-//    private String cMonth;      //消费时间  月
-//    private String cYear;       //消费时间  年
+    private Double cMoney;      //消费金额
+    private String cTime;       //消费时间
+    private int cDay;        //消费时间  日
+    private int cMonth;      //消费时间  月
+    private int cYear;       //消费时间  年
 
 
     public int getId() {
@@ -36,19 +36,43 @@ public class Consumption extends DataSupport{
         this.cName = cName;
     }
 
-    public String getcMoney() {
+    public Double getcMoney() {
         return cMoney;
     }
 
-    public void setcMoney(String cMoney) {
+    public void setcMoney(Double cMoney) {
         this.cMoney = cMoney;
     }
 
-    public Date getcTime() {
+    public String getcTime() {
         return cTime;
     }
 
-    public void setcTime(Date cTime) {
+    public void setcTime(String cTime) {
         this.cTime = cTime;
+    }
+
+    public int getcDay() {
+        return cDay;
+    }
+
+    public void setcDay(int cDay) {
+        this.cDay = cDay;
+    }
+
+    public int getcMonth() {
+        return cMonth;
+    }
+
+    public void setcMonth(int cMonth) {
+        this.cMonth = cMonth;
+    }
+
+    public int getcYear() {
+        return cYear;
+    }
+
+    public void setcYear(int cYear) {
+        this.cYear = cYear;
     }
 }
