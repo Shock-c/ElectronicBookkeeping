@@ -77,6 +77,7 @@ public class BookkeppActivity extends BaseActivity {
             public void onClick(View v) {
                 String incometext = editincome.getText().toString();
 
+
                 if(incometext.equals("")){
                     Toast.makeText(BookkeppActivity.this,"请输入收入金额",Toast.LENGTH_SHORT).show();
                 }else {
@@ -107,6 +108,7 @@ public class BookkeppActivity extends BaseActivity {
                     }
                     Log.i("shock","incomemoney");
                     imoneytext.setText("今天总共收入了"+todaymoney+"元");
+                    editincome.setText("");
                 }
             }
         });
@@ -116,6 +118,7 @@ public class BookkeppActivity extends BaseActivity {
             public void onClick(View v) {
 
                 String consum = editconsum.getText().toString();
+
                 if(consum.equals("")){
                     Toast.makeText(BookkeppActivity.this,"请输入支出数目",Toast.LENGTH_SHORT).show();
                 }else {
@@ -148,7 +151,7 @@ public class BookkeppActivity extends BaseActivity {
                         }
 
                         cmoneytext.setText("今天总共消费了"+todaymoney+"元");
-
+                        editconsum.setText("");
                     }
                 }
 
