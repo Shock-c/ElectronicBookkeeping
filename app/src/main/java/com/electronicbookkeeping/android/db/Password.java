@@ -7,6 +7,7 @@ import org.litepal.crud.DataSupport;
  */
 
 public class Password extends DataSupport{
+    private int id;
 
     private String pwd;
 
@@ -18,5 +19,11 @@ public class Password extends DataSupport{
         this.pwd = pwd;
     }
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 }
